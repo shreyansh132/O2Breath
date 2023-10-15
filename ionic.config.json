@@ -1,0 +1,7 @@
+{
+  "name": "O2Breath",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
