@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Geolocation } from '@capacitor/geolocation';
 import { NotificationService } from '../services/notification.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -10,6 +11,9 @@ import { NotificationService } from '../services/notification.service';
 export class HomePage {
 
   text: string = '';
+  public folder!: string;
+ // public text!: string;
+  private activatedRoute = inject(ActivatedRoute);
 
   constructor(private notificationService: NotificationService) {}
 
